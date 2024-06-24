@@ -1,0 +1,140 @@
+{
+    "last_modified_at": "2024-03-15T00:59:01.313990Z",
+    "selector": {
+        "os": "Junos",
+        "os_version": ".*-EVO$",
+        "manufacturer": "Juniper",
+        "model": "QFX5130-48C.*"
+    },
+    "device_profile_type": "monolithic",
+    "dual_routing_engine": false,
+    "software_capabilities": {
+        "onie": false,
+        "lxc_support": false,
+        "config_apply_support": "complete_only"
+    },
+    "hardware_capabilities": {
+        "asic": "TD4",
+        "ecmp_limit": 128,
+        "ram": 32,
+        "routing_instance_supported": [
+            {
+                "value": true,
+                "version": ".*"
+            }
+        ],
+        "cpu": "x86",
+        "form_factor": "1RU",
+        "userland": 64
+    },
+    "predefined": true,
+    "slot_count": 0,
+    "ports": [
+        {
+            "connector_type": "sfpdd",
+            "panel_id": 1,
+            "transformations": [
+                {
+                    "transformation_id": 1,
+                    "is_default": true,
+                    "interfaces": [
+                        {
+                            "name": "et-0/0/0",
+                            "interface_id": 1,
+                            "speed": {
+                                "value": 100,
+                                "unit": "G"
+                            },
+                            "state": "active",
+                            "setting": "{\"global\": {\"speed\": \"\"}, \"interface\": {\"speed\": \"\"}}"
+                        }
+                    ]
+                },
+                {
+                    "transformation_id": 2,
+                    "is_default": false,
+                    "interfaces": [
+                        {
+                            "name": "et-0/0/0",
+                            "interface_id": 1,
+                            "speed": {
+                                "value": 50,
+                                "unit": "G"
+                            },
+                            "state": "active",
+                            "setting": "{\"global\": {\"breakout\": false, \"fpc\": 0, \"pic\": 0, \"port\": 0, \"speed\": \"\"}, \"interface\": {\"speed\": \"50g\"}}"
+                        }
+                    ]
+                },
+                {
+                    "transformation_id": 3,
+                    "is_default": false,
+                    "interfaces": [
+                        {
+                            "name": "et-0/0/0",
+                            "interface_id": 1,
+                            "speed": {
+                                "value": 25,
+                                "unit": "G"
+                            },
+                            "state": "active",
+                            "setting": "{\"global\": {\"breakout\": false, \"fpc\": 0, \"pic\": 0, \"port\": 0, \"speed\": \"\"}, \"interface\": {\"speed\": \"25g\"}}"
+                        }
+                    ]
+                },
+                {
+                    "transformation_id": 4,
+                    "is_default": false,
+                    "interfaces": [
+                        {
+                            "name": "et-0/0/0",
+                            "interface_id": 1,
+                            "speed": {
+                                "value": 10,
+                                "unit": "G"
+                            },
+                            "state": "active",
+                            "setting": "{\"global\": {\"breakout\": false, \"fpc\": 0, \"pic\": 0, \"port\": 0, \"speed\": \"\"}, \"interface\": {\"speed\": \"10g\"}}"
+                        }
+                    ]
+                },
+                {
+                    "transformation_id": 5,
+                    "is_default": false,
+                    "interfaces": [
+                        {
+                            "name": "et-0/0/0:0",
+                            "interface_id": 1,
+                            "speed": {
+                                "value": 50,
+                                "unit": "G"
+                            },
+                            "state": "active",
+                            "setting": "{\"global\": {\"breakout\": true, \"fpc\": 0, \"pic\": 0, \"port\": 0, \"speed\": \"\"}, \"interface\": {\"parent_breakout_interface\": [\"et-0/0/0\", 2, \"50g\"], \"speed\": \"\", \"unused_interfaces_list\": [\"et-0/0/1\"]}}"
+                        },
+                        {
+                            "name": "et-0/0/0:1",
+                            "interface_id": 2,
+                            "speed": {
+                                "value": 50,
+                                "unit": "G"
+                            },
+                            "state": "active",
+                            "setting": "{\"global\": {\"breakout\": true, \"fpc\": 0, \"pic\": 0, \"port\": 0, \"speed\": \"\"}, \"interface\": {\"parent_breakout_interface\": [\"et-0/0/0\", 2, \"50g\"], \"speed\": \"\", \"unused_interfaces_list\": [\"et-0/0/1\"]}}"
+                        }
+                    ]
+                }
+            ],
+            "column_id": 1,
+            "port_id": 1,
+            "row_id": 1,
+            "failure_domain_id": 1,
+            "display_id": 0,
+            "slot_id": 0
+        }
+    ],
+    "label": "Juniper_QFX5130-48C",
+    "id": "Juniper_QFX5130-48C_Junos",
+    "created_at": "2024-03-15T00:59:01.313990Z",
+    "physical_device": true
+}
